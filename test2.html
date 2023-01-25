@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+<head> 	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Hey Cutie!</title>
+    <link rel="stylesheet" href="styles.css" media="screen">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+	
+	<style class="u-style"> 
+	.u-section-2 {
+	  background-color: #beb4d6;
+	  <!-- background-image: url("images/messi-1.jpg"); -->
+	  background-position: 50% 50%;
+	}
+	.u-section-2 .u-sheet-1 {
+	  min-height: 756px;
+	}
+	.u-section-2 .u-group-1 {
+	  width: 570px;
+	  min-height: 299px;
+	  height: auto;
+	  margin: 259px 0 55px auto;
+	}
+	.u-section-2 .u-container-layout-1 {
+	  padding: 30px;
+	}
+	.u-section-2 .u-text-1 {
+	  font-size: 6rem;
+	  font-weight: 700;
+	  text-align: justify;
+	  margin: 0;
+	}
+	.u-section-2 .u-text-2 {
+	  text-align: justify;
+	  font-size: 1.125rem;
+	  font-weight: 400;
+	  margin: 30px 0 0;
+	}
+	@media (max-width: 1199px) {
+	  .u-section-2 .u-sheet-1 {
+		min-height: 697px;
+	  }
+	  .u-section-2 .u-group-1 {
+		width: 470px;
+		margin-top: 292px;
+		margin-bottom: 60px;
+		height: auto;
+	  }
+	}
+	@media (max-width: 991px) {
+	  .u-section-2 .u-sheet-1 {
+		min-height: 534px;
+	  }
+	  .u-section-2 .u-group-1 {
+		margin-right: auto;
+	  }
+	}
+	@media (max-width: 767px) {
+	  .u-section-2 .u-sheet-1 {
+		min-height: 401px;
+	  }
+	  .u-section-2 .u-container-layout-1 {
+		padding-left: 10px;
+		padding-right: 10px;
+	  }
+	}
+	@media (max-width: 575px) {
+	  .u-section-2 .u-sheet-1 {
+		min-height: 617px;
+	  }
+	  .u-section-2 .u-group-1 {
+		width: 340px;
+		margin-top: 184px;
+	  }
+	}
+	
+	img{
+	  position: fixed;
+	  top: 20%;
+	  right: 50%;
+	  height: 50%;
+	}
+	#slideshow{
+	  display: inline-block;
+	}	
+	
+	</style>
+	
+</head>
+	<body class="u-body">
+    
+		<section class="u-align-center-md u-align-center-sm u-align-center-xs u-clearfix u-image u-section-2" id="carousel_3aca" data-image-width="1620" data-image-height="1080">
+			<div class="u-clearfix u-sheet u-sheet-1">
+				<div class="u-container-style u-group u-group-1">
+					<div class="u-container-layout u-valign-middle u-container-layout-1">
+					<h4 class="u-align-justify u-text u-text-body-alt-color u-text-default u-text-1">Hey Cutie!</h4>
+					<p class="u-align-justify u-text u-text-body-alt-color u-text-default u-text-2">Jiayou today! I will be cheering and supporting you always~ Remember that you are worth it, and you are a beautiful human being :) I love you and I want you to love you too! <3</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<div id="slideshow">
+			<li><img src="images/messi-1.jpg" alt=""></li>
+			<li><img src="images/1.jpg" alt=""></li>
+			<li><img src="images/2.jpg" alt=""></li>
+			<li><img src="images/3.jpg" alt=""></li>
+			<li><img src="images/4.jpg" alt=""></li>
+			<li><img src="images/5.jpg" alt=""></li>
+			<li><img src="images/6.jpg" alt=""></li>
+			<li><img src="images/7.jpg" alt=""></li>
+			<li><img src="images/8.jpg" alt=""></li>
+			<li><img src="images/9.jpg" alt=""></li>
+			<li><img src="images/10.jpg" alt=""></li>
+			<li><img src="images/11.jpg" alt=""></li>
+			<li><img src="images/12.png" alt=""></li>
+			<li><img src="images/13.jpg" alt=""></li>
+		</div>
+		
+		<script>
+			var slideShow = function(container) {
+			this.images = [];//public var
+			this.curImage = 0; 
+			for (i = 0; i < container.childElementCount; i++) {
+				this.images.push(container.children[i]);
+				this.images[i].style.display = "none";
+			}
+				
+				// Handle going to to the next slide
+				var nextSlide = function() {
+					for (var i = 0; i < this.images.length; i++) {
+						this.images[i].style.display = "none";
+					}
+					this.images[this.curImage].style.display = "block";
+					this.curImage++;
+					if (this.curImage >= this.images.length) {
+						this.curImage = 0;
+					}
+					window.setTimeout(nextSlide.bind(this), 5000);
+				};
+				
+				nextSlide.call(this);
+			};
+			var slike = document.getElementById("slideshow");
+			slideShow(slike);
+		</script>
+
+    </body>
+</html>
