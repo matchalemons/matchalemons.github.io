@@ -14,8 +14,8 @@
 	<style class="u-style"> 
 	.u-section-2 {
 	  background-color: #beb4d6;
-	  <!-- background-image: url("images/messi-1.jpg"); -->
 	  background-position: 50% 50%;
+	  height: 100%;
 	}
 	.u-section-2 .u-sheet-1 {
 	  min-height: 756px;
@@ -24,7 +24,7 @@
 	  width: 570px;
 	  min-height: 299px;
 	  height: auto;
-	  margin: 259px 0 55px auto;
+	  margin: 20px 0 55px;
 	}
 	.u-section-2 .u-container-layout-1 {
 	  padding: 30px;
@@ -41,49 +41,9 @@
 	  font-weight: 400;
 	  margin: 30px 0 0;
 	}
-	@media (max-width: 1199px) {
-	  .u-section-2 .u-sheet-1 {
-		min-height: 697px;
-	  }
-	  .u-section-2 .u-group-1 {
-		width: 470px;
-		margin-top: 292px;
-		margin-bottom: 60px;
-		height: auto;
-	  }
-	}
-	@media (max-width: 991px) {
-	  .u-section-2 .u-sheet-1 {
-		min-height: 534px;
-	  }
-	  .u-section-2 .u-group-1 {
-		margin-right: auto;
-	  }
-	}
-	@media (max-width: 767px) {
-	  .u-section-2 .u-sheet-1 {
-		min-height: 401px;
-	  }
-	  .u-section-2 .u-container-layout-1 {
-		padding-left: 10px;
-		padding-right: 10px;
-	  }
-	}
-	@media (max-width: 575px) {
-	  .u-section-2 .u-sheet-1 {
-		min-height: 617px;
-	  }
-	  .u-section-2 .u-group-1 {
-		width: 340px;
-		margin-top: 184px;
-	  }
-	}
 	
 	img{
-	  position: fixed;
-	  top: 20%;
-	  right: 50%;
-	  height: 50%;
+	  height: 350px;
 	}
 	#slideshow{
 	  display: inline-block;
@@ -94,33 +54,34 @@
 </head>
 	<body class="u-body">
     
-		<section class="u-align-center-md u-align-center-sm u-align-center-xs u-clearfix u-image u-section-2" id="carousel_3aca" data-image-width="1620" data-image-height="1080">
+		<section class="u-align-center-md u-align-center-sm u-align-center-xs u-clearfix u-image u-section-2">
 			<div class="u-clearfix u-sheet u-sheet-1">
 				<div class="u-container-style u-group u-group-1">
 					<div class="u-container-layout u-valign-middle u-container-layout-1">
-					<h4 class="u-align-justify u-text u-text-body-alt-color u-text-default u-text-1">Hey Cutie!</h4>
-					<p class="u-align-justify u-text u-text-body-alt-color u-text-default u-text-2">Jiayou today! I will be cheering and supporting you always~ Remember that you are worth it, and you are a beautiful human being :) I love you and I want you to love you too! <3</p>
+						<div id="slideshow">
+							<li><img src="images/messi-1.jpg" alt=""></li>
+							<li><img src="images/1.jpg" alt=""></li>
+							<li><img src="images/2.jpg" alt=""></li>
+							<li><img src="images/3.jpg" alt=""></li>
+							<li><img src="images/4.jpg" alt=""></li>
+							<li><img src="images/5.jpg" alt=""></li>
+							<li><img src="images/6.jpg" alt=""></li>
+							<li><img src="images/7.jpg" alt=""></li>
+							<li><img src="images/8.jpg" alt=""></li>
+							<li><img src="images/9.jpg" alt=""></li>
+							<li><img src="images/10.jpg" alt=""></li>
+							<li><img src="images/11.jpg" alt=""></li>
+							<li><img src="images/12.png" alt=""></li>
+							<li><img src="images/13.png" alt=""></li>
+						</div>
+						<h4 class="u-align-justify u-text u-text-body-alt-color u-text-default u-text-1">Hey Cutie!</h4>
+						<p class="u-align-justify u-text u-text-body-alt-color u-text-default u-text-2">Jiayou today! I will be cheering and supporting you always~ Remember that you are worth it, and you are a beautiful human being :) I love you and I want you to love you too! <3</p>
 					</div>
 				</div>
 			</div>
 		</section>
 		
-		<div id="slideshow">
-			<li><img src="images/messi-1.jpg" alt=""></li>
-			<li><img src="images/1.jpg" alt=""></li>
-			<li><img src="images/2.jpg" alt=""></li>
-			<li><img src="images/3.jpg" alt=""></li>
-			<li><img src="images/4.jpg" alt=""></li>
-			<li><img src="images/5.jpg" alt=""></li>
-			<li><img src="images/6.jpg" alt=""></li>
-			<li><img src="images/7.jpg" alt=""></li>
-			<li><img src="images/8.jpg" alt=""></li>
-			<li><img src="images/9.jpg" alt=""></li>
-			<li><img src="images/10.jpg" alt=""></li>
-			<li><img src="images/11.jpg" alt=""></li>
-			<li><img src="images/12.png" alt=""></li>
-			<li><img src="images/13.jpg" alt=""></li>
-		</div>
+		
 		
 		<script>
 			var slideShow = function(container) {
